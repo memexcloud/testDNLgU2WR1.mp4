@@ -3,6 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>until his soul trembles 🥵😝</title>
+  <script>
+    // Nonaktifkan klik kanan
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Nonaktifkan shortcut pengembang
+    document.onkeydown = function(e) {
+      if (
+        e.key === "F12" || 
+        (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+        (e.ctrlKey && e.shiftKey && e.key === 'J') || 
+        (e.ctrlKey && e.key === 'U')
+      ) {
+        return false;
+      }
+    };
+  </script>
 </head>
 <body>
   <script>
